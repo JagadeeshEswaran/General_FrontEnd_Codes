@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- CSS Plugin => style.css -->
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- This is Sample Stores Admin User Front End -->
+		<section class="formElement">
+			<h1>Store Admin Form</h1>
+			<form action="#" class="myStoreForm" id="storeProductForm">
+				<!-- For Product Name -->
+				<div class="productNameEle">
+					<label for="prodName">Product Name : </label>
+					<input
+						type="text"
+						placeholder="Enter Product Name.."
+						id="prodName"
+						name="prodName" />
+				</div>
+
+				<!-- For Product Name -->
+				<div class="productQty">
+					<label for="quantity">Quantity : </label>
+					<input
+						type="text"
+						placeholder="Enter Product Qty.."
+						id="quantity"
+						name="quantity" />
+				</div>
+
+				<!-- For Product Price -->
+				<div class="productPrice">
+					<label for="price">Price : </label>
+					<input
+						type="text"
+						placeholder="Enter Product price.."
+						id="price"
+						name="price" />
+				</div>
+
+				<!-- For Product Discount -->
+				<div class="productDiscount">
+					<label for="discountPercentage">Discount % : </label>
+					<input
+						type="text"
+						placeholder="Enter Product Discount.."
+						id="discountPercentage"
+						name="discountPercentage" />
+				</div>
+
+				<!-- For Product Product Image -->
+				<div class="productImageEle">
+					<label for="productImage">Image link for Thumbnail : </label>
+					<input
+						type="text"
+						placeholder="Provide a Link.."
+						id="productImage"
+						name="productImage" />
+				</div>
+
+				<!-- Submit Button -->
+				<input
+					type="submit"
+					value="Submit"
+					id="formSubmitBtn"
+					class="mySubmitBtn"
+					formaction="submit" />
+			</form>
+		</section>
+
+		<div id="app"></div>
+
+		<!-- JS Script Plugin => index.js -->
+		<script src="./index.js"></script>
+	</body>
+</html>

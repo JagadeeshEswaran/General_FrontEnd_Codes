@@ -1,0 +1,105 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	background: #edf7f6;
+
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.formElement {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	flex-direction: column;
+
+	height: 100vh;
+
+	/* margin: 0 auto; */
+}
+
+.myStoreForm {
+	border: 1px solid blue;
+	padding: 1.25rem;
+	border-radius: 0.75rem;
+
+	background: #fff;
+
+	/* CSS Glassmorphism Effect */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+
+	width: 40%;
+	justify-content: center;
+}
+
+.myStoreForm div {
+	padding: 1rem;
+
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	border-radius: 0.2rem;
+}
+
+.productNameEle,
+.productQty,
+.productPrice,
+.productDiscount,
+.productImageEle {
+	transition: 175ms;
+}
+
+.productNameEle:hover,
+.productQty:hover,
+.productPrice:hover,
+.productDiscount:hover,
+.productImageEle:hover {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition: 200ms;
+}
+
+.myStoreForm > div > input {
+	border: none;
+	border-bottom: 1px solid rgb(59, 38, 38);
+
+	justify-content: space-between;
+	padding: 0.5rem 5rem;
+}
+
+.myStoreForm div {
+	width: 95%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mySubmitBtn {
+	border: none;
+	background: none;
+
+	margin: 2rem 0 1rem;
+
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+
+	/* From https://css.glass */
+	background: rgba(136, 72, 214, 0.72);
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(9.4px);
+	-webkit-backdrop-filter: blur(9.4px);
+	border: 1px solid rgba(136, 72, 214, 0.24);
+
+	padding: 1rem 0;
+
+	font-size: larger;
+	font-weight: bold;
+}
